@@ -42,6 +42,11 @@ apt install python3-pip
 echo "Installing exa"
 apt install exa
 
+
+# Installs HTTPie
+echo "Installing HTTPie"
+apt install httpie
+
 # Installs Oh My Posh and set folder permissions
 echo "Installing oh-my-posh"
 wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
@@ -63,6 +68,10 @@ apt install neofetch
 # Installs htop
 echo "Installing htop"
 apt install htop
+
+# Installs bitwise
+echo "Installing bitwise"
+apt install bitwise
 
 # Download FUSE (https://github.com/AppImage/AppImageKit/wiki/FUSE)
 echo "Downloading and installing FUSE"
@@ -97,6 +106,14 @@ echo "Installing NVIM Plugins"
 
     # Install tree-sitter (with cargo)
     cargo install tree-sitter-cli
+
+# Download julia
+echo "Downloading Julia"
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.8/julia-1.8.5-linux-x86_64.tar.gz -P ~/
+# Extract Julia
+tar zxvf julia-1.8.5-linux-x86_64.tar.gz
+rm julia-1.8.5-linux-x86_64.tar.gz
+
 
 echo -e "${RED}Paste these lines on your .bashrc file${NOCOLOR}"
 echo

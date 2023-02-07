@@ -1,5 +1,19 @@
-vim.g.material_style = "deep ocean"
-vim.cmd 'colorscheme material'
+-- vim.g.material_style = "deep ocean"
+-- vim.cmd 'colorscheme material'
+
+
+
+-- " For dark version.
+vim.g.background='dark'
+--  " For light version.
+--  vim.g.background=light
+--  " Set contrast.
+--  " This configuration option should be placed before `colorscheme gruvbox-material`.
+--  " Available values: 'hard', 'medium'(default), 'soft'
+vim.g.gruvbox_material_background = 'hard'
+-- " For better performance
+vim.g.gruvbox_material_better_performance = 1
+vim.cmd "colorscheme gruvbox-material"
 
 vim.api.nvim_set_hl(0, "LazyButton", { ctermbg=0 })
 vim.api.nvim_set_hl(0, "LazyButtonActibe", { ctermfg=1, ctermbg=0 })

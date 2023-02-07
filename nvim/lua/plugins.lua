@@ -1,6 +1,8 @@
 require("lazy").setup(
 {
 -- Plugins
+  -- Gruvbox Theme,
+  'sainnhe/gruvbox-material',
   -- Moonfly Theme
   { 
 	"bluz71/vim-moonfly-colors", 
@@ -23,8 +25,6 @@ require("lazy").setup(
   },
   -- Moonlight Theme
   'shaunsingh/moonlight.nvim',
-  -- Material Theme
-  'marko-cerovac/material.nvim',
   -- TreeSitter
   {
 	"nvim-treesitter/nvim-treesitter", 
@@ -69,7 +69,20 @@ require("lazy").setup(
   'windwp/nvim-autopairs',
   'folke/which-key.nvim',
   'lukas-reineke/indent-blankline.nvim',
+  -- The LSP stuff
   'neovim/nvim-lspconfig',
+  'hrsh7th/nvim-cmp',
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  'hrsh7th/cmp-cmdline',
+  'ray-x/lsp_signature.nvim',
+  'hrsh7th/cmp-vsnip',
+  {
+    'hrsh7th/vim-vsnip',
+    event = 'BufWinEnter'
+  },
+  'onsails/lspkind.nvim',
   {
     'akinsho/toggleterm.nvim',
     version = '*'
