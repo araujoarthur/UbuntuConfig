@@ -28,10 +28,15 @@ apt get git
 # Adds the Deadsnakes Repository to Install Python 3.11
 echo "Adding PPA:deadsnakes/ppa"
 add-apt-repository ppa:deadsnakes/ppa
+apt update
 
 # Installs Python 3.11
 echo "Installing Python 3.11"
 apt install python3.11
+
+# Installs pip
+echo "Installing pip"
+apt install python3-pip
 
 # Installs exa
 echo "Installing exa"
