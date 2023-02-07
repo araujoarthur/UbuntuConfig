@@ -33,7 +33,7 @@ cmp.setup({
     mapping = {
 
         -- ... Your other mappings ...
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        ["<Tab>"] = cmp.mapping.confirm({ select = true }),
         ["<S-Down>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()

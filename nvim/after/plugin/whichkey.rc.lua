@@ -20,3 +20,17 @@ local opts = {
 }
 
 wk.register(mappings, opts)
+
+wk.register({
+  b = {
+	name = "Buffer",
+	d = "Buffer Delete",
+	q = "Quit Command"
+  },
+  t = {
+	name = "File Tree",
+	e = {':NvimTreeToggle<CR>', 'Another way to Toggle the Filetree'},
+	f = {':NvimTreeFocus<CR>', 'Set focus on the Filetree'},
+	r = {':NvimTreeRefresh<CR>', 'Refresh the Filetree'}
+  }
+}, {prefix = "<leader>"})
